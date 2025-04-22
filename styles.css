@@ -126,3 +126,33 @@
     place-items: start stretch;                 
   }
   
+  /* === Responsive Layout: Media Query === */
+@media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;          /* Stack nav links on small screens */
+      align-items: flex-start;
+    }
+  
+    #discussion {
+      grid-template-columns: 1fr;      /* Collapse grid to single column */
+    }
+  
+    section {
+      margin: 1rem;
+      padding: 1rem;
+    }
+  
+    h1, h2, h3 {
+      font-size: 1.2rem;
+      text-align: left;
+    }
+  
+    video {
+      width: 100%;
+    }
+  
+    form {
+      padding: 1rem;
+    }
+  }
+  
