@@ -119,3 +119,10 @@
     transform: scale(0.98);
   }
   
+  #discussion {
+    display: grid;                              
+    grid-template-columns: 1fr 1fr;             
+    gap: 1rem;                                 
+    place-items: start stretch;                 
+  }
+  
