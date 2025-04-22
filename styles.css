@@ -1,0 +1,121 @@
+/* === General CSS Topics === */
+:root {
+    --main-bg-color: hsl(210, 90%, 70%);
+    --fallback-color: orange;
+    --spacing-unit: 2rem;
+  }
+  
+  body {
+    background-color: var(--main-bg-color, var(--fallback-color));
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: rgb(33, 33, 33);
+  }
+  
+  /* === Header === */
+  header {
+    background-color: rgba(0, 128, 128, 0.85); /* teal + alpha */
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 4px solid #fff;
+  }
+  
+  /* === Navigation === */
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5cm;
+    list-style: none;
+    margin: auto;
+    background-color: #FFFFFF;
+  }
+  
+  /* === Units (3 relative, 3 absolute) === */
+  main {
+    max-width: 90vw;    /* relative */
+    min-width: 300px;   /* absolute */
+    width: 80%;
+    font-size: 1.2em;   /* relative */
+    line-height: 1.5rem;/* relative */
+    padding: 24pt;      /* absolute */
+  }
+  
+  /* === Box Model: margin, padding, border === */
+  section {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  
+    border-style: solid;
+    border-color: #ddd;
+    border-width: 2px;
+    border-radius: 10px;
+  }
+  
+  footer {
+    margin: auto;
+    padding: 1rem 2rem;
+    border: 2px dashed #888;
+    border-radius: 8px;
+  }
+  
+  /* === Text Styling === */
+  h1, h2, h3 {
+    color: #004a99;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  /* === Display Types === */
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  audio, video {
+    display: inline-block;
+  }
+  
+  /* === Sizing === */
+  video {
+    height: auto;
+    width: 400px;
+    max-width: 100%;
+    min-width: 200px;
+  }
+  
+  /* === Positioning === */
+  nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+  }
+  
+  #feedback {
+    position: relative;
+  }
+  
+  .footer-note {
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+  }
+  
+  /* === Pseudo-classes === */
+  button:hover {
+    color: crimson;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
