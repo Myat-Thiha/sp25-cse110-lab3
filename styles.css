@@ -111,8 +111,8 @@
   }
   
   /* === Pseudo-classes === */
-  button:hover {
-    color: crimson;
+button:hover {
+    color: rgb(20, 220, 63);
   }
   
   button:active {
@@ -153,6 +153,93 @@
   
     form {
       padding: 1rem;
+    }
+  }
+  
+  /* === Universal Selector === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* === Element Selector === */
+  section {
+    background-color: #fdfdfd;
+  }
+  
+  /* === Class Selector === */
+  .footer-note {
+    font-size: 0.9rem;
+    color: gray;
+  }
+  
+  /* === ID Selector === */
+  #feedback {
+    background-color: #f9f9ff;
+    border-left: 4px solid #888;
+  }
+  
+  /* === Attribute Selector === */
+  input[type="text"] {
+    border: 2px solid #ccc;
+    padding: 0.5rem;
+  }
+  
+  /* === Pseudo-class Selector === */
+  a:hover {
+    color: darkred;
+  }
+  
+  /* === Selector List (multiple elements) === */
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #004a99;
+  }
+  
+  /* === Descendant Combinator (element element) === */
+  form label {
+    font-weight: bold;
+  }
+  
+  /* === Child Combinator (element > element) === */
+  form > fieldset {
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  /* === General Sibling Combinator (element ~ element) === */
+  input[type="radio"]:checked ~ label {
+    color: green;
+  }
+  
+  /* === Adjacent Sibling Combinator (element + element) === */
+  input[type="checkbox"] + label {
+    font-style: italic;
+  }
+  
+  /* === Combining Two Selectors (element.class) === */
+  p.footer-note {
+    text-align: center;
+  }
+  
+  /* === Modern Selector: :has() === */
+  form:has(textarea:focus) {
+    border: 2px dashed #007acc;
+  }
+  
+  /* === Nested Selectors === */
+  form {
+    & button {
+      background-color: #004a99;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+    }
+  
+    & button:hover {
+      background-color: #0077cc;
     }
   }
   
